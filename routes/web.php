@@ -17,3 +17,19 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/classic', function () {
+    return view('classic');
+});
+Route::get('/business', function () {
+    return view('business');
+});
+Route::get('admin-page', function () {
+    return view ('admin.index');
+});
+

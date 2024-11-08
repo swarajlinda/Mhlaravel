@@ -6,7 +6,7 @@
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Diamant - Hotel & Resort Booking  Template</title>
+        <title> MH ClUBS & RESORTS  </title>
         <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -31,13 +31,13 @@
                 <div class="container">
                     <!--  header-top -->
                     <div class="header-top  fl-wrap">
-                        <div class="header-top_contacts"><a href="#"><span>Call:</span> +489756412322</a><a href="#"><span>Find us:</span> USA 27TH Brooklyn NY</a></div>
+                        <div class="header-top_contacts"><a href="#"><span>Call:</span> 8434608046</a><a href="#"><span>Find us:</span>manokamna nagar tikra toli Piska nagri ranchi Jharkhand 835303 </a></div>
                         <div class="header-social">
                             <ul>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href="https://www.facebook.com/share/v/QmdSAD2PwMmihCjD/?mibextid=ox5AEW" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://youtu.be/NmNC19T5Fb0?si=CNYCXWKjVYA9Otu0" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/reel/DBIz0P_Srws/?igsh=OGo1NzBqMHkzZ3Jl" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li> -->
                             </ul>
                         </div>
                         <div class="booking-reviews">
@@ -54,47 +54,51 @@
                     </div>
                     <!--  header-top end  -->
                     <div class="nav-holder-wrap init-fix-header  fl-wrap">
-                        <a href="index.html" class="logo-holder"><img src="images/logo2.png" alt=""></a>
+                        <a href="/" class="logo-holder"  >
+                            <img src="images/MHlogoNw.png" alt="" style="width: 110px; height: 55px; position: relative; ">
+
+                        </a>
                         <!--  navigation -->
                         <div class="nav-holder main-menu">
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="#" class="act-link">Home <i class="fas fa-caret-down"></i></a>
+                                        <a href="#" class="act-link">Home </a>
                                         <!--second level -->
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a href="index.html">Style 1</a></li>
                                             <li><a href="index2.html">Style 2</a></li>
                                             <li><a href="index3.html">Style 3</a></li>
                                             <li><a href="onepage.html">One Page</a></li>
                                             <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
+                                        </ul> -->
                                         <!--second level end-->
                                     </li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="/about">About</a></li>
                                     <li>
                                         <a href="#">Rooms<i class="fas fa-caret-down"></i></a>
                                         <!--second level -->
                                         <ul>
-                                            <li><a href="rooms.html">Rooms 1</a></li>
+                                            <!-- <li><a href="rooms.html">Rooms 1</a></li>
                                             <li><a href="rooms2.html">Rooms 2</a></li>
                                             <li><a href="rooms3.html">Rooms 3</a></li>
-                                            <li><a href="rooms4.html">Rooms 4</a></li>
-                                            <li><a href="room-single.html">Room single</a></li>
-                                            <li><a href="room-single2.html">Room single 2</a></li>
-                                            <li><a href="room-single3.html">Room single 3</a></li>
+                                            <li><a href="rooms4.html">Rooms 4</a></li> -->
+                                            <li><a href="/classic">Classic Rooms</a></li>
+                                            <li><a href="/business">Business class </a></li>
+                                            <li><a href="suite.html">Suite rooms</a></li>
+                                            <li><a href="deluxe.html">Deluxe rooms</a></li>
                                         </ul>
                                         <!--second level end-->
                                     </li>
-                                    <li><a href="restaurant.html">Restaurant</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="blog.html">News</a></li>
+                                    <!-- <li><a href="restaurant.html">Restaurant</a></li> -->
+                                    <li><a href="/contact">Contact</a></li>
+                                    <!-- <li><a href="blog.html">News</a></li> -->
                                 </ul>
                             </nav>
                         </div>
                         <!-- navigation  end -->  		
                         <div class="serach-header-btn_wrap">							
-                            <a href="rooms.html" class="serach-header-btn"><i class="fa-light fa-magnifying-glass"></i> <span>Serach a Room</span></a>
+                            <a   class="serach-header-btn"><i class="fa-light fa-magnifying-glass"></i> <span>Serach a Room</span></a>
                         </div>
                         <div class="show-cart sc_btn   htact"><i class="fa-light fa-basket-shopping-simple"></i><span class="show-cart_count">2</span><span class="header-tooltip">Your Wishlist</span></div>
                         <div class="show-share-btn showshare htact"><i class="fa-light fa-share-nodes"></i><span class="header-tooltip">Share</span></div>
@@ -158,12 +162,12 @@
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
                                 <div class="fs-slider-item hidden-content">
-                                    <div class="bg"  data-bg="images/bg/22.jpg" data-swiper-parallax="40%"></div>
+                                    <div class="bg"  data-bg="images/bg/prof.jpeg" data-swiper-parallax="40%"></div>
                                     <div class="overlay overlay-bold"></div>
                                     <div class="hero-title-container">
                                         <div class="section-title">
-                                            <h4>Enjoy your time in our Hotel with pleasure.</h4>
-                                            <h2>Welcome to The Diamant <br>Premium Hotel</h2>
+                                            <!-- <h4>Enjoy your time in our Hotel with pleasure.</h4> -->
+                                            <h2>WELCOME to MH CLUB  <br> & RESORTS </h2>
                                             <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                             <a href="#sec2" class="stg_link custom-scroll-link">Start Explore</a>
                                         </div>
@@ -174,7 +178,7 @@
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
                                 <div class="fs-slider-item hidden-content">
-                                    <div class="bg"  data-bg="images/bg/15.jpg" data-swiper-parallax="40%"></div>
+                                    <div class="bg"  data-bg="images/bg/prof1.JPG" data-swiper-parallax="40%"></div>
                                     <div class="overlay"></div>
                                     <div class="hero-title-container">
                                         <div class="section-title">
@@ -190,7 +194,7 @@
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
                                 <div class="fs-slider-item hidden-content">
-                                    <div class="bg"  data-bg="images/bg/16.jpg" data-swiper-parallax="40%"></div>
+                                    <div class="bg"  data-bg="images/bg/prof2.JPG" data-swiper-parallax="40%"></div>
                                     <div class="overlay"></div>
                                     <div class="hero-title-container">
                                         <div class="section-title">
@@ -238,6 +242,7 @@
                 </div>
             </div>
             <!-- section end  -->
+             
             <!--content-->
             <div class="content">
                 <!-- breadcrumbs-wrap  -->
@@ -258,20 +263,20 @@
                                     <h2>About Our Hotel</h2>
                                 </div>
                                 <div class="text-block tb-sin">
-                                    <p class="has-drop-cap">Qed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.Ut enim ad minima Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. 
+                                    <p class="has-drop-cap">Our hotel offers a perfect blend of comfort, luxury, and convenience, making it an ideal destination for both business and leisure travelers. Located in the heart of the city, we provide modern amenities, including spacious rooms, free Wi-Fi, a fully equipped fitness center, and an on-site restaurant offering local and international cuisine. Guests can enjoy a relaxing stay with our exceptional service, a refreshing outdoor pool, and scenic views. Whether you're here for a quick getaway or an extended stay, our hotel promises a memorable experience with personalized attention and top-notch hospitality.
                                     </p>
-                                    <p>Fames massa tortor sit nisl sit. Duis nulla tempus quisque et diam condimentum nisl. Rhoncus quisque elementum nulla lorem at turpis vitae quisque. Vulputate duis vel et odio hendrerit magna. Nec lacus dui egestas sit. Vulputate tincidunt viverra viverra etiam porta facilisis.    Fames massa tortor sit nisl sit. Duis nulla tempus quisque et diam condimentum nisl. Rhoncus quisque elementum nulla lorem at turpis vitae quisque. Vulputate duis vel et odio hendrerit magna. Nec lacus dui egestas sit. Vulputate tincidunt viverra viverra etiam porta facilisis.   </p>
-                                    <a href="about.html" class="btn fl-btn ">Read more About Us</a>
+                                    <p>We pride ourselves on offering an exceptional culinary experience, with our gourmet restaurant serving both local delicacies and international favorites. Guests can unwind at our rooftop pool with stunning city views or rejuvenate at our full-service spa and fitness center. Our prime location offers easy access to popular attractions, shopping districts, and business centers, making us perfect for both leisure and business travelers alike.   </p>
+                                    <a href="/about" class="btn fl-btn ">Read more About Us</a>
                                     <div class="dc_dec-item_left"><span></span></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="hero-image-collge-wrap">
                                     <div class="single-dec_img">
-                                        <img src="images/all/11.jpg" alt="" class="respimg">
+                                        <img src="images/all/14.png" alt="" class="respimg">
                                     </div>
-                                    <div class="hero_images-collage-item" style="width: 25%; bottom:  25px; z-index: 15; left: -70px;"><img src="images/all/12.jpg" class="respimg" alt=""></div>
-                                    <div class="hero_images-collage-item" style="width: 45%; top: -5%; z-index: 11; right: -120px;"><img src="images/all/7.jpg" class="respimg" alt=""></div>
+                                    <div class="hero_images-collage-item" style="width: 25%; bottom:  25px; z-index: 15; left: -70px;"><img src="images/all/15.jpg" class="respimg" alt=""></div>
+                                    <div class="hero_images-collage-item" style="width: 45%; top: -5%; z-index: 11; right: -120px;"><img src="images/all/16.jpeg" class="respimg" alt=""></div>
                                     <div class="dc_dec-item_right"><span></span></div>
                                 </div>
                             </div>
@@ -305,19 +310,19 @@
                                             <div class="swiper-slide">
                                                 <div class="rooms-carousel-item full-height">
                                                     <div class="bg-wrap bg-parallax-wrap-gradien fs-wrapper">
-                                                        <div class="bg" data-bg="images/room/1.jpg" data-swiper-parallax="10%"></div>
+                                                        <div class="bg" data-bg="images/room/Classic.JPG" data-swiper-parallax="10%"></div>
                                                     </div>
                                                     <div class="rooms-carousel-item_container">
-                                                        <h3><a href="room-single.html">Garden Family Room</a>  </h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p>
+                                                        <h3><a href="/classic">Classic rooms</a>  </h3>
+                                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p> -->
                                                         <div class="room-card-details">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><i class="fa-light fa-user"></i><span>2 Guest</span></li>
                                                                 <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
                                                                 <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <div class="grid-item_price">
-                                                                <span>$129/Night</span>
+                                                                <span>1599/Night</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -329,19 +334,19 @@
                                             <div class="swiper-slide">
                                                 <div class="rooms-carousel-item full-height">
                                                     <div class="bg-wrap bg-parallax-wrap-gradien fs-wrapper">
-                                                        <div class="bg" data-bg="images/room/2.jpg" data-swiper-parallax="10%"></div>
+                                                        <div class="bg" data-bg="images/room/Bclass2.JPG" data-swiper-parallax="10%"></div>
                                                     </div>
                                                     <div class="rooms-carousel-item_container">
-                                                        <h3><a href="room-single.html">Premium Panorama Room</a>  </h3>
-                                                        <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.   </p>
+                                                        <h3><a href="room-single.html">Business Class </a>  </h3>
+                                                        <!-- <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.   </p> -->
                                                         <div class="room-card-details">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><i class="fa-light fa-user"></i><span>4 Guest</span></li>
                                                                 <li><i class="fa-light fa-bed-front"></i><span>2 Bed</span></li>
                                                                 <li><i class="fa-light fa-bath"></i><span>2 Bath</span></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <div class="grid-item_price">
-                                                                <span>$230/Night</span>
+                                                                <span>2499/Night</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -356,16 +361,16 @@
                                                         <div class="bg" data-bg="images/room/3.jpg" data-swiper-parallax="10%"></div>
                                                     </div>
                                                     <div class="rooms-carousel-item_container">
-                                                        <h3><a href="room-single.html">Presidential Suite</a>  </h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p>
+                                                        <h3><a href="room-single.html">Suite rooms -work in progress coming soon</a>  </h3>
+                                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p> -->
                                                         <div class="room-card-details">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><i class="fa-light fa-user"></i><span>2 Guest</span></li>
                                                                 <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
                                                                 <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <div class="grid-item_price">
-                                                                <span>$543/Night</span>
+                                                                <!-- <span>$543/Night</span> -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -380,16 +385,16 @@
                                                         <div class="bg" data-bg="images/room/4.jpg" data-swiper-parallax="10%"></div>
                                                     </div>
                                                     <div class="rooms-carousel-item_container">
-                                                        <h3><a href="room-single.html">Beach Villa Room</a>  </h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p>
+                                                        <h3><a href="room-single.html">Delux room - coming soon</a>  </h3>
+                                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor.  </p> -->
                                                         <div class="room-card-details">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><i class="fa-light fa-user"></i><span>3 Guest</span></li>
                                                                 <li><i class="fa-light fa-bed-front"></i><span>2 Bed</span></li>
                                                                 <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <div class="grid-item_price">
-                                                                <span>$321/Night</span>
+                                                                <!-- <span>$321/Night</span> -->
                                                             </div>
                                                         </div>
 
@@ -429,12 +434,12 @@
                                         <div class="content-front">
                                             <div class="cf-inner">
                                                 <div class="fs-wrapper">
-                                                    <div class="bg "  data-bg="images/services/1.jpg"></div>
+                                                    <div class="bg "  data-bg="images/services/4.JPG"></div>
                                                     <div class="overlay overlay-bold"></div>
                                                 </div>
                                                 <div class="inner">
-                                                    <h2>Spa And Wellness</h2>
-                                                    <h4>Start Relax better</h4>
+                                                    <h2>Party hall</h2>
+                                                    <h4>Party hall</h4>
                                                     <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                                 </div>
                                                 <div class="serv-num">01.</div>
@@ -463,7 +468,7 @@
                                                     <div class="overlay overlay-bold"></div>
                                                 </div>
                                                 <div class="inner">
-                                                    <h2>Indoor Swimming Pool</h2>
+                                                    <h2>Conference hall</h2>
                                                     <h4>Quality is the heart</h4>
                                                     <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                                 </div>
@@ -493,7 +498,7 @@
                                                     <div class="overlay overlay-bold"></div>
                                                 </div>
                                                 <div class="inner">
-                                                    <h2>The Restaurant Center</h2>
+                                                    <h2>Suite rooms -work in progress coming soon</h2>
                                                     <h4>Hot & ready to serve</h4>
                                                     <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                                 </div>
@@ -517,11 +522,11 @@
                             <div class="dc_dec-item_left"><span></span></div>
                             <div class="dc_dec-item_right"><span></span></div>
                         </div>
-                        <a href="contact.html"   class="dwonload_btn">Get In touch With Us</a>
+                        <a href="/contact"   class="dwonload_btn">Get In touch With Us</a>
                         <div class="sc-dec" style="left: -220px; bottom: -100px;"></div>
                         <div class="sc-dec2" style="right: -220px; top: -100px;"></div>
                     </div>
-                    <div class="content-dec2 fs-wrapper"></div>
+                      <div class="content-dec2 fs-wrapper"></div>
                     <div class="content-dec"><span></span></div>
                 </div>
                 <!-- section end  -->	
@@ -583,11 +588,11 @@
                                 <div class="dec-container">
                                     <div class="boxed-container-title_item">
                                         <h4>More about us</h4>
-                                        <h2>Luxary Premium Hotel In NewYork, USA </h2>
-                                        <p class="has-drop-cap">Qolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero adipiscing elit. Donec auctor et urnaLorem ipsum dolor sit.</p>
-                                        <p> Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.Cras   </p>
+                                        <h2>Experience Unmatched Comfort and Luxury at Our MH Resorts And Club  </h2>
+                                        <p class="has-drop-cap">Welcome to our hotel, where luxury meets exceptional service in a truly unique setting. Located in the heart of the city, we offer an unparalleled experience for discerning travelers. Our rooms and suites are thoughtfully designed with contemporary elegance, providing all the modern comforts you need, from high-speed Wi-Fi to luxurious bedding. Whether you’re here for business or leisure, our state-of-the-art conference rooms, rejuvenating spa, and rooftop pool offer both relaxation and productivity. </p>
+                                        <p> Our renowned restaurant serves a diverse menu, catering to both local and international tastes. At our hotel, your comfort and satisfaction are our top priority, ensuring an unforgettable stay.  </p>
                                         <div class="tbc-separator"></div>
-                                        <div class="signature-opt">
+                                        <!-- <div class="signature-opt">
                                             <div class="signature_title">
                                                 <img src="images/avatar/7.jpg" alt="">
                                                 <div class="signature_title_item">
@@ -596,19 +601,19 @@
                                                 </div>
                                             </div>
                                             <div class="signature_item"><img src="images/signature.png" class="respimg" alt=""></div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="boxed-container-wrap">
-                                <div class="bg" data-bg="images/bg/6.jpg"></div>
+                                <div class="bg" data-bg="images/bg/frontMh.png"></div>
                                 <div class="overlay"></div>
                                 <div class="promo-video">
                                     <div class="video-box-btn image-popup color-bg"  id="html5-videos" data-html="#video1"><i class="fas fa-play"></i></div>
                                     <h4>Video About Our Hotels</h4>
                                 </div>
                             </div>
-                            <div style="display:none;" id="video1" class="popup_video" data-videolink="video/1.mp4">
+                            <div style="display:none;" id="video1" class="popup_video" data-videolink="video/2.mp4">
                                 <video class="lg-video-object lg-html5" controls preload="none">
                                     <source src="https://diamant.kwst.net/" type="video/mp4">
                                 </video>
@@ -622,7 +627,7 @@
                                 <!--aminites-card-item-->
                                 <div class="col-lg-3">
                                     <div class="aminites-card-item">
-                                        <i class="fa-light fa-alarm-clock"></i>
+                                        <i class="fa-solid fa-car"></i>
                                         <h4>Pick Up & Drop</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                         <div class="tbc-separator"></div>
@@ -644,7 +649,7 @@
                                 <!--aminites-card-item-->
                                 <div class="col-lg-3">
                                     <div class="aminites-card-item">
-                                        <i class="fa-light fa-vacuum"></i>
+                                        <i class="fa-solid fa-bell-concierge"></i>
                                         <h4>Room Service</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                         <div class="tbc-separator"></div>
@@ -666,8 +671,8 @@
                                 <!--aminites-card-item-->
                                 <div class="col-lg-3">
                                     <div class="aminites-card-item">
-                                        <i class="fa-light fa-croissant"></i>
-                                        <h4>Free Breakfast</h4>
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>FRONT PARKING</h4>
                                         <p>Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. </p>
                                         <div class="tbc-separator"></div>
                                         <span class="aci_num">05.</span>
@@ -677,8 +682,8 @@
                                 <!--aminites-card-item-->
                                 <div class="col-lg-3">
                                     <div class="aminites-card-item">
-                                        <i class="fa-light fa-map-location-dot"></i>
-                                        <h4>Travel accomodation</h4>
+                                        <i class="fa-solid fa-hat-wizard"></i>
+                                        <h4>PARTY HALL</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                         <div class="tbc-separator"></div>
                                         <span class="aci_num">06.</span>
@@ -688,8 +693,8 @@
                                 <!--aminites-card-item-->
                                 <div class="col-lg-3">
                                     <div class="aminites-card-item">
-                                        <i class="fa-light fa-plane"></i>
-                                        <h4>Airport Shuttle</h4>
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <h4>SWIMMING POOL</h4>
                                         <p>Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. </p>
                                         <div class="tbc-separator"></div>
                                         <span class="aci_num">07.</span>
@@ -697,7 +702,7 @@
                                 </div>
                                 <!--aminites-card-item end-->								
                                 <!--aminites-card-item-->
-                                <div class="col-lg-3">
+                                <!-- <div class="col-lg-3">
                                     <div class="aminites-card-item">
                                         <i class="fa-light fa-wheelchair"></i>
                                         <h4>Wheelchair Friendly</h4>
@@ -705,7 +710,7 @@
                                         <div class="tbc-separator"></div>
                                         <span class="aci_num">08.</span>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!--aminites-card-item end-->									
                             </div>
                             <div class="dc_dec-item_left"><span></span></div>
@@ -716,12 +721,13 @@
                         <div class="sc-dec2" style="right:  220px; top: 50%;"></div>
                     </div>
                 </div>
+          
                 <!-- section end  -->					
                 <!-- section   -->
                 <div class="content-section dark-bg no-padding column-section hidden-section" data-scrollax-parent="true">
                     <div class="column-wrap-bg right-wrap">
                         <div class="par-elem">
-                            <div class="bg"  data-bg="images/bg/23.jpg" data-scrollax="properties: { translateY: '20%' }"></div>
+                            <div class="bg"  data-bg="images/bg/22.jpg" data-scrollax="properties: { translateY: '20%' }"></div>
                             <div class="overlay"></div>
                         </div>
                         <div class="column-wrap-bg-text">
@@ -744,31 +750,31 @@
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
                                                 <!-- swiper-slide -->
-                                                <div class="swiper-slide">
+                                                <!-- <div class="swiper-slide">
                                                     <div class="event-carousel-item">
                                                         <h4><a href="blog-single.html">Jazz Band Live Event</a></h4>
                                                         <span class="event-date">25 may 2020</span>
                                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. </p>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <!-- swiper-slide end -->
                                                 <!-- swiper-slide -->
-                                                <div class="swiper-slide">
+                                                <!-- <div class="swiper-slide">
                                                     <div class="event-carousel-item">
                                                         <h4><a href="blog-single.html">Wine and Steak Day</a></h4>
                                                         <span class="event-date">19 June 2020</span>
                                                         <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit   gravida. </p>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <!-- swiper-slide end -->
                                                 <!-- swiper-slide -->
-                                                <div class="swiper-slide">
+                                                <!-- <div class="swiper-slide">
                                                     <div class="event-carousel-item">
                                                         <h4><a href="blog-single.html">Freedom Day Celebration</a></h4>
                                                         <span class="event-date">14 October 2020</span>
                                                         <p>Lorem Ipsum generators on the Internet king this the first true generator laudantium totam aperiam. </p>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <!-- swiper-slide end -->
                                             </div>
                                         </div>
@@ -786,7 +792,7 @@
                 </div>
                 <!-- section end  -->				
                 <!-- section   -->
-                <div class="content-section">
+                <!-- <div class="content-section">
                     <div class="container  ">
                         <div class="section-title">
                             <h4>What said about us</h4>
@@ -801,7 +807,7 @@
                         <div class="testimonilas-carousel">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                    <!--testi-item-->
+                                   
                                     <div class="swiper-slide">
                                         <div class="testi-item">
                                             <div class="testi-avatar"><img src="images/avatar/2.jpg" alt=""></div>
@@ -817,8 +823,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--testi-item end-->
-                                    <!--testi-item-->
+                                    
                                     <div class="swiper-slide">
                                         <div class="testi-item">
                                             <div class="testi-avatar"><img src="images/avatar/3.jpg" alt=""></div>
@@ -834,8 +839,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--testi-item end-->
-                                    <!--testi-item-->
+                                     
                                     <div class="swiper-slide">
                                         <div class="testi-item">
                                             <div class="testi-avatar"><img src="images/avatar/4.jpg" alt=""></div>
@@ -851,8 +855,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--testi-item end-->
-                                    <!--testi-item-->
+                                    
                                     <div class="swiper-slide">
                                         <div class="testi-item">
                                             <div class="testi-avatar"><img src="images/avatar/5.jpg" alt=""></div>
@@ -868,14 +871,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--testi-item end-->
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="tcs-pagination tcs-pagination_init"></div>
                     </div>
                     <div class="content-dec2 fs-wrapper"></div>
-                </div>
+                </div> -->
                 <!-- section end  -->				
                 <div class="content-dec"><span></span></div>
             </div>
@@ -896,8 +899,8 @@
                                     <div class="footer-widget">
                                         <div class="footer-widget-title">About us</div>
                                         <div class="footer-widget-content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo inventore veritatis et quasi architecto. Consectetur adipiscing elit. </p>
-                                            <a href="about.html" class="footer-widget-content-link"><span>Read more</span></a>                                                    	
+                                            <p>Welcome to our hotel, where comfort meets elegance. Enjoy luxurious rooms, exceptional service, and stunning views. Located in the heart of the city, we promise a memorable and relaxing stay. </p>
+                                            <a href="/about" class="footer-widget-content-link"><span>Read more</span></a>                                                    	
                                         </div>
                                     </div>
                                 </div>
@@ -909,9 +912,9 @@
                                         <div class="footer-widget-content">
                                             <div class="footer-contacts footer-box">
                                                 <ul>
-                                                    <li><span>Call :</span><a href="#">+489756412322</a> , <a href="#">+56897456123</a></li>
-                                                    <li><span>Write  :</span><a href="#">yourmail@domain.com</a></li>
-                                                    <li><span>Find us : </span><a href="#">USA 27TH Brooklyn NY</a></li>
+                                                    <li><span>Call :</span><a href="#">8434608046</a> , <a href="#">7903476056</a></li>
+                                                    <li><span>Write  :</span><a href="#">mhclubandresorts@gmail.com</a></li>
+                                                    <li><span>Find us : </span><a href="#">piska Nagri Ranchi </a></li>
                                                 </ul>
                                             </div>
                                             <a href="contacts.html" class="footer-widget-content-link"><span>Get in Touch</span></a>                                                    	
@@ -958,7 +961,7 @@
                         </div>
                         <!-- footer-widget-wrap end-->					
                     </div>
-                    <div class="footer-title-dec">Diamant Hotel</div>
+                    <div class="footer-title-dec">MH RESORTS & CLUB </div>
                 </div>
                 <div class="footer-social">
                     <div class="container">
@@ -972,8 +975,8 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                        <a href="index.html" class="footer-logo"><img src="images/logo.png" alt=""></a>
-                        <div class="copyright">&#169; Diamant 2024 . All rights reserved. </div>
+                        <a href="/" class="footer-logo"><img src="images/MHlogoNw.png" alt="" style="width: 105px; height: 55px;"></a>
+                        <div class="copyright">&#169; MH Club & Resort  2024 . All rights reserved. </div>
                         <div class="to-top"><span>Back To Top </span><i class="fal fa-angle-double-up"></i></div>
                     </div>
                 </div>
