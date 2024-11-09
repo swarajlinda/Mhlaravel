@@ -29,6 +29,12 @@ Route::get('/classic', function () {
 Route::get('/business', function () {
     return view('business');
 });
+Route::get('/suite', function () {
+    return view('suite');
+});
+Route::get('/deluxe', function () {
+    return view('deluxe');
+});
 Route::get('admin-page', function () {
     return view ('admin.index');
 });

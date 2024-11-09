@@ -85,8 +85,8 @@
                                             <li><a href="rooms4.html">Rooms 4</a></li> -->
                                             <li><a href="/classic">Classic Rooms</a></li>
                                             <li><a href="/business">Business class </a></li>
-                                            <li><a href="suite.html">Suite rooms</a></li>
-                                            <li><a href="deluxe.html">Deluxe rooms</a></li>
+                                            <li><a href="/suite">Suite rooms</a></li>
+                                            <li><a href="/deluxe">Deluxe rooms</a></li>
                                         </ul>
                                         <!--second level end-->
                                     </li>

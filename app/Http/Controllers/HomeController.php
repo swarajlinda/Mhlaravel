@@ -26,4 +26,12 @@ class HomeController extends Controller
     {
         return view('business');
     }
+    public function suite()
+    {
+        return view('suite');
+    }
+    public function deluxe()
+    {
+        return view('deluxe');
+    }
 }
