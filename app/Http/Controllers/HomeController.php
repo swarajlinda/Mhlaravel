@@ -34,4 +34,12 @@ class HomeController extends Controller
     {
         return view('deluxe');
     }
+    public function checkin()
+    {
+        return view('checkin');
+    }
+    public function billing()
+    {
+        return view('billing');
+    }
 }

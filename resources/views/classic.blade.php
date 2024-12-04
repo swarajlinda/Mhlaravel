@@ -48,7 +48,7 @@
                 <div class="single-carousle-container">
                     <div class="single-carousel-wrap ">
                         <!-- fw-carousel  -->
-                        <div class="single-carousel   fl-wrap    lightgallery" data-mousecontrol="0">
+                        <div class="single-carousel fl-wrap lightgallery" data-mousecontrol="0">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <!-- swiper-slide-->

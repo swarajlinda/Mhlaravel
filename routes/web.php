@@ -38,4 +38,10 @@ Route::get('/deluxe', function () {
 Route::get('admin-page', function () {
     return view ('admin.index');
 });
+Route::get('/checkin', function () {
+    return view ('checkin');
+});
+Route::get('/billing', function () {
+    return view ('billing');
+});
 
