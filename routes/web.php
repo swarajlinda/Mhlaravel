@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -36,12 +37,19 @@ Route::get('/deluxe', function () {
     return view('deluxe');
 });
 Route::get('admin-page', function () {
-    return view ('admin.index');
+    return view('admin.index');
 });
 Route::get('/checkin', function () {
-    return view ('checkin');
+    return view('checkin');
 });
 Route::get('/billing', function () {
-    return view ('billing');
+    return view('billing');
 });
 
+
+// 
+Route::controller(AuthController::class)->group(function () {
+    Route::get("login", "loginForm");
+    Route::post("login-process", "processLogin")->name('login.post');
+    Route::get("logout", "logout")->name('logout');
+});
