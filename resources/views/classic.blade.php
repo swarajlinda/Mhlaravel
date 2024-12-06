@@ -33,12 +33,16 @@
 <!-- section end  -->
 <!--content-->
 <div class="content">
+
+
     <!-- breadcrumbs-wrap  -->
     <div class="breadcrumbs-wrap">
         <div class="container">
             <a href="#">Home</a><a href="#">Rooms</a><span>Room single</span>
         </div>
     </div>
+
+
     <!--breadcrumbs-wrap end  -->
     <!-- section   -->
     <div class="content-section notp">
@@ -233,6 +237,16 @@
                                         <input type="text" placeholder="Your Phone" value="" name="phone" id="phone" maxlength="10">
                                     </div>
                                     @error('phone')
+                                    <div class="alert">
+                                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                        <strong>{{ $message }} !</strong>
+                                    </div>
+                                    @enderror
+                                    <div class="input-wrap">
+                                        <label>Email:</label>
+                                        <input type="text" placeholder="Your Email" value="" name="email" id="email">
+                                    </div>
+                                    @error('email')
                                     <div class="alert">
                                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                                         <strong>{{ $message }} !</strong>

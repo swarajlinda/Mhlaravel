@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255); // Name of the person booking
             $table->string('mobile', 10); // Mobile number
+            $table->string('email', 255); // Mobile number
             $table->date('check_in'); // Check-in date
             $table->date('check_out'); // Check-out date
             $table->integer('guests'); // Number of guests
+            $table->string('room_type', 255); // Mobile number
             $table->boolean('is_deleted')->default(0); // Soft delete flag
             $table->timestamps();
         });
