@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -36,9 +37,7 @@ Route::get('/suite', function () {
 Route::get('/deluxe', function () {
     return view('deluxe');
 });
-Route::get('admin-page', function () {
-    return view('admin.index');
-});
+
 Route::get('/checkin', function () {
     return view('checkin');
 });
@@ -46,10 +45,22 @@ Route::get('/billing', function () {
     return view('billing');
 });
 
-
 // 
+Route::controller(BookingController::class)->group(function () {
+    Route::get("book-room", "bookRoom")->name('book-room');
+});
+
+
+// Autheticated routes here
+
+Route::middleware('auth')->group(function () {
+    Route::get('admin-page', function () {
+        return view('admin.index');
+    });
+});
+
 Route::controller(AuthController::class)->group(function () {
-    Route::get("login", "loginForm");
+    Route::get("login", "loginForm")->name('login');
     Route::post("login-process", "processLogin")->name('login.post');
     Route::get("logout", "logout")->name('logout');
 });

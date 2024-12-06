@@ -565,7 +565,7 @@ function initDiamant() {
         }
     });
     $('#res_date').on('apply.daterangepicker', function (ev, picker) {
-        $(this).val(picker.startDate.format('MMMM D, YYYY') + ' - ' + picker.endDate.format('MMMM D, YYYY'))
+        $(this).val(picker.startDate.format('YYYY-MM-D') + ' / ' + picker.endDate.format('YYYY-MM-D'))
     });
     $('#res_date').on('cancel.daterangepicker', function (ev, picker) {
         $(this).val('');
