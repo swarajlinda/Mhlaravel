@@ -53,12 +53,13 @@
                     <div class="step" icon="fa fa-check" id="4">
                         <div class="step-title">
                             <span class="step-number">04</span>
-                            <div class="step-text">Details</div>
+                            <div class="step-text">Others</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <form action="#">
+            <form action="{{route('post.check.in')}}" method="POST">
+                @csrf
                 <div class="stepper-content-container">
                     <!-- Step 1 -->
                     <div class="stepper-content fade-in" stepper-label="1">
@@ -110,17 +111,17 @@
                                             </div>
 
                                             <div class="form-group col-md-4">
-                                                <label for="dob">Select Gender</label>
+                                                <label for="gender">Select Gender</label>
                                                 <div class="form-check form-check-inline mt-4">
-                                                    <input class="form-check-input" type="radio" name="dob" id="inlineRadio1" value="Male">
+                                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male">
                                                     <label class="form-check-label" for="inlineRadio1">Male</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="dob" id="inlineRadio2" value="Female">
+                                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
                                                     <label class="form-check-label" for="inlineRadio2">Female</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="dob" id="inlineRadio3" value="Others">
+                                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="Others">
                                                     <label class="form-check-label" for="inlineRadio3">Others </label>
                                                 </div>
                                             </div>
@@ -145,31 +146,33 @@
                         <div class="w-100 h-100" style="padding: 30px 10px; background: #f9f9f9">
                             <div
                                 class="my-0 mx-auto"
-                                style="max-width: 500px; border-radius: 10px; background: #f5f5f5">
+                                style="border-radius: 10px; background: #f5f5f5">
                                 <div class="p-10 d-flex flex-column justify-content-center align-items-center">
                                     <div class="text-center pt-20 pe-0 pb-10 ps-0 fw-bold">
-                                        Step 2
+                                        Organization
                                     </div>
-                                    <div class="p-10 d-flex flex-column justify-content-center align-items-center w-100">
-                                        <label class="text-muted mb-2"> First Name </label>
-                                        <div class="cdb-form">
-                                            <input type="text" class="form-control bg-light" />
+                                    <br>
+                                    <div class="p-10 d-flex flex-column justify-content-center w-100">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="companyName">Company Name</label>
+                                                <input type="text" class="form-control" id="companyName" name="companyName" required="">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="department">Department</label>
+                                                <input type="text" class="form-control" id="department" name="department" required="">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="designation">Designation</label>
+                                                <input type="text" class="form-control" id="designation" name="designation" required="">
+                                            </div>
                                         </div>
-                                        <label class="text-muted mb-2"> Last Name </label>
-                                        <div class="cdb-form">
-                                            <input type="email" class="form-control bg-light" />
-                                        </div>
-                                        <label class="text-muted mb-2"> Phone Number </label>
-                                        <div class="cdb-form">
-                                            <input type="text" class="form-control bg-light" />
-                                        </div>
-                                        <label class="text-muted mb-2"> Address </label>
-                                        <div class="cdb-form">
-                                            <input type="email" class="form-control bg-light" />
-                                        </div>
-                                        <label class="text-muted mb-2"> Country </label>
-                                        <div class="cdb-form">
-                                            <input type="text" class="form-control bg-light" />
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="website">Website</label>
+                                                <input type="url" class="form-control" id="website" name="website" required="">
+                                            </div>
                                         </div>
 
                                         <div class="d-flex w-100 align-items-center justify-content-between">
@@ -192,33 +195,59 @@
                         <div class="w-100 h-100" style="padding: 30px 10px; background: #f9f9f9">
                             <div
                                 class="my-0 mx-auto"
-                                style="max-width: 500px; border-radius: 10px; background: #f5f5f5">
+                                style="border-radius: 10px; background: #f5f5f5">
                                 <div class="p-10 d-flex flex-column justify-content-center align-items-center">
                                     <div class="text-center pt-20 pe-0 pb-10 ps-0 fw-bold">
-                                        Step 3
+                                        Correspondence
                                     </div>
-                                    <div class="p-10 d-flex flex-column justify-content-center align-items-center w-100">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae
-                                            vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda
-                                            officia quibusdam deleniti eos cupiditate dolore doloribus!
-                                        </p>
-                                        <p>
-                                            Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore
-                                            recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque
-                                            quos facere sequi unde optio aliquam!
-                                        </p>
-                                        <p>
-                                            Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore
-                                            recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque
-                                            quos facere sequi unde optio aliquam!
-                                        </p>
-                                        <p>
-                                            Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore
-                                            recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque
-                                            quos facere sequi unde optio aliquam!
-                                        </p>
+                                    <br>
+                                    <div class="p-10 d-flex flex-column justify-content-center w-100">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="address">Address</label>
+                                                <input type="text" class="form-control" id="address" name="address" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="city">Town/City</label>
+                                                <input type="text" class="form-control" id="city" name="city" required="">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="postalCode">Zip/Postal Code</label>
+                                                <input type="text" class="form-control" id="postalCode" name="postalCode" required="">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="state">State/Province</label>
+                                                <input type="text" class="form-control" id="state" name="state" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="country">Country/Nationality</label>
+                                                <input type="text" class="form-control" id="country" name="country" required="">
+                                            </div>
+                                            <div class="form-group col-md-8">
+                                                <label for="visitingPurpose">Purpose Of Visiting</label>
+                                                <input type="text" class="form-control" id="visitingPurpose" name="visitingPurpose" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="comingFrom">Coming From</label>
+                                                <input type="text" class="form-control" id="comingFrom" name="comingFrom" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="goingTo">Going To</label>
+                                                <input type="text" class="form-control" id="goingTo" name="goingTo" required="">
+                                            </div>
+                                        </div>
+
                                     </div>
+
                                     <div class="d-flex w-100 align-items-center justify-content-between">
                                         <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('2')">
                                             Previous
@@ -239,20 +268,46 @@
                         <div class="w-100 h-100" style="padding: 30px 10px; background: #f9f9f9">
                             <div
                                 class="my-0 mx-auto"
-                                style="max-width: 500px; border-radius: 10px; background: #f5f5f5">
+                                style="border-radius: 10px; background: #f5f5f5">
                                 <div class="p-10 d-flex flex-column justify-content-center align-items-center">
                                     <div class="text-center pt-20 pe-0 pb-10 ps-0 fw-bold">
-                                        Step 4
+                                        Others
                                     </div>
-                                    <div class="p-10 d-flex flex-column justify-content-center align-items-center w-100">
-                                        <div class="text-center">
-                                            Congratulations! You have completed this process.
-                                            <span role="img" aria-label="image"> 🎉 </span>
+                                    <br>
+                                    <div class="p-10 d-flex flex-column justify-content-center w-100">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="noOfGuests">No Of Guests</label>
+                                                <input type="text" class="form-control" id="noOfGuests" name="noOfGuests" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="roomNo">Room No</label>
+                                                <input type="text" class="form-control" id="roomNo" name="roomNo" required="">
+                                            </div>
+
                                         </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="roomType">Room Type</label>
+                                                <select class="form-control" id="roomType" name="roomType" required="">
+                                                    <option value="Delux">Delux</option>
+                                                    <option value="Business">Business</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="rate">Rate</label>
+                                                <input type="number" class="form-control" id="rate" name="rate" required="">
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="d-flex w-100 align-items-center justify-content-between">
                                         <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
                                             Previous
+                                        </button>
+                                        <button class="btn btn-dark btn-block mb-3 mt-5" type="submit">
+                                            Submit
                                         </button>
                                     </div>
                                 </div>
