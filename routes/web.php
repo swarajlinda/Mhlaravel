@@ -63,6 +63,7 @@ Route::middleware('auth')->group(function () {
     Route::controller(CheckController::class)->group(function () {
         Route::get('check-in', 'checkIn')->name('check.in');
         Route::post('post-check-in', 'postCheckIn')->name('post.check.in');
+        Route::get('billing/{id}', 'billing')->name('billing');
     });
 });
 

@@ -49,4 +49,12 @@ class CheckController extends Controller
             'data' => $visitor
         ]);
     }
+
+    public function billing($id)
+    {
+        $visitor = Visitor::find($id);
+        return view('billing', [
+            'data' => $visitor
+        ]);
+    }
 }
