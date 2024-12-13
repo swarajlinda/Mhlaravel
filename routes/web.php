@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CheckController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
@@ -56,6 +57,11 @@ Route::controller(BookingController::class)->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('admin-page', function () {
         return view('admin.index');
+    });
+
+    // 
+    Route::controller(CheckController::class)->group(function () {
+        Route::get('check-in', 'checkIn')->name('check.in');
     });
 });
 
