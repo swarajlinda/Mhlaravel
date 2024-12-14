@@ -42,4 +42,8 @@ class HomeController extends Controller
     {
         return view('billing');
     }
+    public function billingnew()
+    {
+        return view('billingnew');
+    }
 }

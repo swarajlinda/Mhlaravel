@@ -45,6 +45,9 @@ Route::get('/checkin', function () {
 Route::get('/billing', function () {
     return view('billing');
 });
+Route::get('/billingnew', function () {
+    return view('billingnew');
+});
 
 // 
 Route::controller(BookingController::class)->group(function () {
