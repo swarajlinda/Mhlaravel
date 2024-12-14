@@ -45,7 +45,7 @@ class CheckController extends Controller
             "rate" => $req->rate,
         ]);
 
-        return view('billing', [
+        return view('billingnew', [
             'data' => $visitor
         ]);
     }
@@ -53,7 +53,7 @@ class CheckController extends Controller
     public function billing($id)
     {
         $visitor = Visitor::find($id);
-        return view('billing', [
+        return view('billingnew', [
             'data' => $visitor
         ]);
     }
