@@ -192,7 +192,7 @@
                           <tr>
                             <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
                               <small>ORDER</small> #800000025<br />
-                              <small>MARCH 4TH 2016</small>
+                              <small>MARCH 4TH 2024</small>
                             </td>
                           </tr>
                         </tbody>
@@ -386,7 +386,7 @@
 
 
 
-                          <table width="220" border="0" cellpadding="0" cellspacing="0" align="right" class="col">
+                          <table width="220" border="0" cellpadding="0" cellspacing="0" align="right" class="col" >
                             <tbody>
                               <tr class="visibleMobile">
                                 <td height="20"></td>

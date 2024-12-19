@@ -46,4 +46,8 @@ class HomeController extends Controller
     {
         return view('billingnew');
     }
+    public function privacypolicy()
+    {
+        return view('privacypolicy');
+    }
 }

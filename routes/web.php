@@ -48,6 +48,9 @@ Route::get('/billing', function () {
 Route::get('/billingnew', function () {
     return view('billingnew');
 });
+Route::get('/privacypolicy', function () {
+    return view('privacypolicy');
+});
 
 // 
 Route::controller(BookingController::class)->group(function () {

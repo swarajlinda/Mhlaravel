@@ -212,7 +212,7 @@
                                                 <li><a href="#">Rooms</a></li>
                                                 <li><a href="#">Contacts</a></li>
                                                 <li><a href="#">About</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="/privacypolicy">Privacy Policy</a></li>
                                             </ul>
                                         </div>
                                     </div>
