@@ -4,6 +4,36 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title> Order confirmation </title>
+  <script>
+    // Function to save content as a file (e.g., a .txt file)
+    function saveContent() {
+      // Create a Blob with the content
+      const content = document.getElementById("contentToSave").innerText;
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+
+      // Create a link element to trigger the download
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "content.txt";  // Default file name for the saved file
+      link.click();  // Trigger the download
+    }
+
+   // Function to print a specific div element
+   function printContent() {
+      // Get the content of the div to print
+      var printContents = document.getElementById("contentToPrint").innerHTML;
+      
+      // Create a new window to load the content for printing
+      var originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+
+      // Print the content of the div
+      window.print();
+
+      // Restore the original content after printing
+      document.body.innerHTML = originalContents;
+    }
+  </script>
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
   <style type="text/css">
@@ -128,6 +158,7 @@
 
 <body>
   <!-- Header -->
+  <div id="contentToPrint">
   <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
     <tr>
       <td height="20"></td>
@@ -494,7 +525,6 @@
   </table>
   <!-- /Information -->
   <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
-
     <tr>
       <td>
         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff" style="border-radius: 0 0 10px 10px;">
@@ -507,6 +537,18 @@
                       Have a nice day.
                     </td>
                   </tr>
+                  <tr>
+                    <td style="text-align: right; padding-top: 20px;">
+                      <!-- Save Button -->
+                      <a href="javascript:void(0);" onclick="saveContent()" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; font-size: 14px; font-family: 'Open Sans', sans-serif; border-radius: 5px; margin-right: 10px;">
+                        Save
+                      </a>
+                      <!-- Print Button -->
+                      <a href="javascript:void(0);" onclick="printContent()" style="background-color: #2196F3; color: white; padding: 10px 20px; text-decoration: none; font-size: 14px; font-family: 'Open Sans', sans-serif; border-radius: 5px;">
+                        Print
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </td>
@@ -514,7 +556,6 @@
           <tr class="spacer">
             <td height="50"></td>
           </tr>
-
         </table>
       </td>
     </tr>
@@ -522,6 +563,13 @@
       <td height="20"></td>
     </tr>
   </table>
+  </div>
+  <!-- Hidden content to be saved or printed -->
+  <div id="contentToSave" style="display: none;">
+    Have a nice day.
+  </div>
+
+
 </body>
 
 </html>
