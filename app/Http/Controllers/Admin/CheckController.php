@@ -43,6 +43,8 @@ class CheckController extends Controller
             "room_no" => $req->roomNo,
             "room_type" => $req->roomType,
             "rate" => $req->rate,
+            "payment_method" => $req->paymentMethod,
+            "payment_amt" => $req->paymentAmt,
         ]);
 
         return view('billingnew', [

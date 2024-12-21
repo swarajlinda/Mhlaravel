@@ -254,7 +254,7 @@
                         <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">
                           <small>{{$data->rate}}<small>
                         </td>
-                        <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>CASH</small></td>
+                        <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>{{$data->payment_method}}</small></td>
                         <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><small>0</small></td>
                         <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->rate}}<small></td>
                         <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->rate}}<small></td>
@@ -386,14 +386,14 @@
 
 
 
-                          <table width="220" border="0" cellpadding="0" cellspacing="0" align="right" class="col" >
+                          <table width="220" border="0" cellpadding="0" cellspacing="0" align="right" class="col">
                             <tbody>
                               <tr class="visibleMobile">
                                 <td height="20"></td>
                               </tr>
                               <tr>
                                 <td style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
-                                  <strong>PAYMENT METHOD</strong>
+                                  <strong>PAYMENT METHOD</strong> {{$data->payment_method}}
                                 </td>
                               </tr>
                               <tr>
@@ -409,7 +409,7 @@
                                   <strong>Room Rent :</strong> {{$data->rate}} <br>
                                   <strong>Food Charges :</strong> # <br>
                                   <strong>Other Charges :</strong> # <br>
-                                  <strong>Tax Amount :</strong> {{$data->rate}} <br>
+                                  <strong>Tax Amount :</strong> {{$data->payment_amt}} <br>
                                 </td>
                               </tr>
                             </tbody>

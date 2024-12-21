@@ -56,6 +56,12 @@
                             <div class="step-text">Others</div>
                         </div>
                     </div>
+                    <div class="step" icon="fa fa-check" id="4">
+                        <div class="step-title">
+                            <span class="step-number">05</span>
+                            <div class="step-text">Payment</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form action="{{route('post.check.in')}}" method="POST">
@@ -306,6 +312,51 @@
                                         <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
                                             Previous
                                         </button>
+                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('5')">
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step4 -->
+
+                    <!-- Step 5 -->
+                    <div class="stepper-content fade-in" stepper-label="5">
+                        <div class="w-100 h-100" style="padding: 30px 10px; background: #f9f9f9">
+                            <div
+                                class="my-0 mx-auto"
+                                style="border-radius: 10px; background: #f5f5f5">
+                                <div class="p-10 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="text-center pt-20 pe-0 pb-10 ps-0 fw-bold">
+                                        Payment
+                                    </div>
+                                    <br>
+                                    <div class="p-10 d-flex flex-column justify-content-center w-100">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="paymentMethod">Payment Method</label>
+                                                <select class="form-control" name="paymentMethod" id="paymentMethod">
+                                                    <option value="">Select Payment Method</option>
+                                                    <option value="CASH">CASH</option>
+                                                    <option value="CHEQUE">CHEQUE</option>
+                                                    <option value="DD">DD</option>
+                                                    <option value="UPI">UPI</option>
+                                                    <option value="OTHERS">OTHERS</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="paymentAmt">Payment Amount</label>
+                                                <input type="text" class="form-control" id="paymentAmt" name="paymentAmt" required="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('4')">
+                                            Previous
+                                        </button>
                                         <button class="btn btn-dark btn-block mb-3 mt-5" type="submit">
                                             Submit
                                         </button>
@@ -314,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Step4 -->
+                    <!-- Step 5 -->
                 </div>
             </form>
         </div>
