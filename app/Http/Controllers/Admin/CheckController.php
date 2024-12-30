@@ -43,6 +43,7 @@ class CheckController extends Controller
             "room_no" => $req->roomNo,
             "room_type" => $req->roomType,
             "rate" => $req->rate,
+            "additional_amount" => $req->additionAmt,
             "payment_method" => $req->paymentMethod,
             "payment_amt" => $req->paymentAmt,
         ]);

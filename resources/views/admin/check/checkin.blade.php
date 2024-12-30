@@ -307,6 +307,13 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="additionAmt">Additional Services Amount</label>
+                                                <input type="number" class="form-control" id="additionAmt" name="additionAmt">
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="d-flex w-100 align-items-center justify-content-between">
                                         <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
@@ -348,7 +355,7 @@
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="paymentAmt">Payment Amount</label>
-                                                <input type="text" class="form-control" id="paymentAmt" name="paymentAmt" required="">
+                                                <input type="number" class="form-control" id="paymentAmt" name="paymentAmt" required="">
                                             </div>
 
                                         </div>
