@@ -56,6 +56,14 @@
             <i class="nav-icon fas fa-th"></i>
             <p>
               Check In
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{route('booking-requests')}}" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
+            <p>
+              Booking Requests
               <span class="right badge badge-danger">New</span>
             </p>
           </a>

@@ -41,4 +41,14 @@ class BookingController extends Controller
         } catch (Exception $e) {
         }
     }
+
+
+    // 
+    public function bookingRequests()
+    {
+        $bookings = Booking::getAllBookings();
+        return view('admin.bookings.booking-reqs', [
+            'bookings' => $bookings
+        ]);
+    }
 }

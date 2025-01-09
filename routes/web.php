@@ -71,6 +71,11 @@ Route::middleware('auth')->group(function () {
         Route::post('post-check-in', 'postCheckIn')->name('post.check.in');
         Route::get('billing/{id}', 'billing')->name('billing');
     });
+
+    // 
+    Route::controller(BookingController::class)->group(function () {
+        Route::get("booking-requests", "bookingRequests")->name('booking-requests');
+    });
 });
 
 Route::controller(AuthController::class)->group(function () {
