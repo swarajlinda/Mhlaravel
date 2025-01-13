@@ -169,7 +169,7 @@
                                                                 <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
                                                             </ul> -->
                                                 <div class="grid-item_price">
-                                                    <span>1599/Night</span>
+                                                    <span>1999/Night</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@
                                                                 <li><i class="fa-light fa-bath"></i><span>2 Bath</span></li>
                                                             </ul> -->
                                                 <div class="grid-item_price">
-                                                    <span>2499/Night</span>
+                                                    <span>2999/Night</span>
                                                 </div>
                                             </div>
                                         </div>
