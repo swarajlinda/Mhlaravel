@@ -111,7 +111,7 @@
                             <div class="text-block-title">
                                 <h4>About Accommodation</h4>
                                 <div class="sr-opt">
-                                    <div class="sa-price">1599/Night</div>
+                                    <div class="sa-price">1999/Night</div>
                                     <div class="sa_towishlist">Add to Wishlist</div>
                                 </div>
                             </div>
