@@ -12,8 +12,8 @@
                         <div class="bg" data-bg="images/bg/prof.jpeg" data-swiper-parallax="40%"></div>
                         <div class="overlay overlay-bold"></div>
                         <div class="hero-title-container">
-                            <div class="section-title">
-                                <!-- <h4>Enjoy your time in our Hotel with pleasure.</h4> -->
+                            <div class="section-title" style="margin-top: 20px;" >
+                               <h4>Enjoy your time in our Hotel with pleasure.</h4> 
                                 <h2>WELCOME to MH CLUB <br> & RESORTS </h2>
                                 <div class="section-separator"><span><i class="fa-thin fa-gem"></i></span></div>
                                 <a href="#sec2" class="stg_link custom-scroll-link">Start Explore</a>

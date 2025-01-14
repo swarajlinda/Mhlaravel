@@ -50,7 +50,7 @@
                                     <h4>Enjoy your time in our Hotel</h4>
                                     <h2>About Our Hotel</h2>
                                 </div>
-                                <div class="text-block tb-sin">
+                                <!-- <div class="text-block tb-sin">
                                     <p class="has-drop-cap">Welcome to MH Clubs and Resorts, where luxury meets comfort! Our hotel offers a wide range of amenities designed to cater to all your needs. From our luxurious rooms and suites to our exclusive resorts, clubs, and a state-of-the-art gym, we provide an exceptional experience for our guests.  
                                     </p>
                                     <p> Whether you're here for business or leisure, you'll enjoy world-class facilities, including a relaxing spa, diverse dining options, event spaces, and recreational activities for all ages. Come and experience the perfect blend of relaxation and sophistication at MH Clubs and Resorts.   </p>
@@ -66,7 +66,7 @@
                                       Contact no.-8434608046   </p>
                                     <a href="/contact" class="btn fl-btn ">Call For Reservation</a>
                                     <div class="dc_dec-item_left"><span></span></div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-collge-wrap">
