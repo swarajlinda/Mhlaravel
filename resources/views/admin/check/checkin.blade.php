@@ -297,7 +297,7 @@
                                             <div class="form-group col-md-6">
                                                 <label for="roomType">Room Type</label>
                                                 <select class="form-control" id="roomType" name="roomType" required="">
-                                                    <option value="Delux">Delux</option>
+                                                    <option value="Classic">Classic</option>
                                                     <option value="Business">Business</option>
                                                 </select>
                                             </div>

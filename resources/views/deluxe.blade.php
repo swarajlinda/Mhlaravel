@@ -409,7 +409,7 @@
                                                 <div class="quantity-item">
                                                     <input type="button" value="-" class="minus">
                                                     <input type="text" name="quantity" title="Qty" class="qty color-bg"
-                                                        data-min="1" data-max="10" data-step="1" value="1">
+                                                        data-min="1" data-max="2" data-step="1" value="1">
                                                     <input type="button" value="+" class="plus">
                                                 </div>
                                             </div>
