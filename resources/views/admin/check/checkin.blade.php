@@ -177,7 +177,7 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-12">
                                                 <label for="website">Website</label>
-                                                <input type="url" class="form-control" id="website" name="website" >
+                                                <input type="text" class="form-control" id="website" name="website" >
                                             </div>
                                         </div>
 
