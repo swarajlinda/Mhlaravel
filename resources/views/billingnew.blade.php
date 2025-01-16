@@ -224,8 +224,8 @@
                             </tr>
                             <tr>
                               <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
-                                <small>ORDER</small> #800000025<br />
-                                <small>MARCH 4TH 2024</small>
+                                <!-- <small>ORDER</small> #800000025<br /> -->
+                                <!-- <small>MARCH 4TH 2024</small> -->
                               </td>
                             </tr>
                           </tbody>
@@ -268,10 +268,10 @@
                             <small>PAYMENT TYPE<small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="center">
-                            <small>LESS:ADVANCE<small>
+                            <small>ADVANCE<small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
-                            <small>ROUND OFF<small>
+                            <small>ROOM TYPE <small>    
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
                             <small>NET PAYBLE AMT<small>
@@ -435,13 +435,13 @@
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
                                     <strong>Time Of Arrival :</strong> {{$data->check_in_date}} <br>
-                                    <strong>Date Of Departure : </strong> # <br>
+                                    <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <strong>Room No. :</strong>{{$data->room_no}}<br>
                                     <strong>Days :</strong> # <br>
                                     <strong>Rate :</strong> {{$data->rate}} <br>
                                     <strong>Room Rent :</strong> {{$data->rate}} <br>
                                     <strong>Additional Charges :</strong> {{$data->additional_amount}} <br>
-                                    <strong>Other Charges :</strong> # <br>
+                                    <!-- <strong>Other Charges :</strong> # <br> -->
                                     <strong>Tax Amount :</strong> {{$data->payment_amt}} <br>
                                   </td>
                                 </tr>
