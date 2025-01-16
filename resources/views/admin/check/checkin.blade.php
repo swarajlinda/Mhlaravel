@@ -162,22 +162,22 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
                                                 <label for="companyName">Company Name</label>
-                                                <input type="text" class="form-control" id="companyName" name="companyName" required="">
+                                                <input type="text" class="form-control" id="companyName" name="companyName" >
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="department">Department</label>
-                                                <input type="text" class="form-control" id="department" name="department" required="">
+                                                <input type="text" class="form-control" id="department" name="department" >
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="designation">Designation</label>
-                                                <input type="text" class="form-control" id="designation" name="designation" required="">
+                                                <input type="text" class="form-control" id="designation" name="designation" >
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group col-md-12">
                                                 <label for="website">Website</label>
-                                                <input type="url" class="form-control" id="website" name="website" required="">
+                                                <input type="url" class="form-control" id="website" name="website" >
                                             </div>
                                         </div>
 
