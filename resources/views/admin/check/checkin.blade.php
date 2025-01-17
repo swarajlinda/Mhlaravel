@@ -404,10 +404,24 @@
     const stepper = new CDB.Stepper(stepperElement);
 
     $("#days").change(function() {
+        appendAmt();
+    });
+
+    $("#rate").change(function() {
+        appendAmt();
+    });
+
+    $("#roomNo").change(function() {
+        appendAmt();
+    });
+
+    function appendAmt() {
         var rate = $('#rate').val();
         var days = $('#days').val();
-        var totalAmt = rate * days;
+        var roomNo = $('#roomNo').val();
+        var totalRooms = roomNo.split(",").length;
+        var totalAmt = rate * days * totalRooms;
         $("#totalAmount").val(totalAmt);
-    });
+    }
 </script>
 @endsection
