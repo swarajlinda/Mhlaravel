@@ -224,8 +224,12 @@
                             </tr>
                             <tr>
                               <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
-                                <!-- <small>ORDER</small> #800000025<br /> -->
-                                <!-- <small>MARCH 4TH 2024</small> -->
+                                <small>
+                                  <?php
+                                  $now = \Carbon\Carbon::now();
+                                  echo $now->format('d F Y');
+                                  ?>
+                                </small>
                               </td>
                             </tr>
                           </tbody>
@@ -296,11 +300,11 @@
                           <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
                         <!-- <tr>
-                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">Beats RemoteTalk Cable</td>
-                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MHDV2G/A</small></td>
-                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">1</td>
-                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right">$29.95</td>
-                    </tr> -->
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">Beats RemoteTalk Cable</td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MHDV2G/A</small></td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">1</td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right">$29.95</td>
+                        </tr> -->
                         <tr>
                           <td height="1" colspan="5" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
