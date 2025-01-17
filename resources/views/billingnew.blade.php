@@ -271,7 +271,7 @@
                             <small>ADVANCE<small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
-                            <small>ROOM TYPE <small>    
+                            <small>ROOM TYPE <small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
                             <small>NET PAYBLE AMT<small>
@@ -289,7 +289,7 @@
                           </td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>{{$data->payment_method}}</small></td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><small>0</small></td>
-                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->rate}}<small></td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->room_type}}<small></td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->rate}}<small></td>
                         </tr>
                         <tr>
