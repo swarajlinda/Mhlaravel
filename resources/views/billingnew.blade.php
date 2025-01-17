@@ -274,7 +274,7 @@
                             <small>ROOM TYPE <small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
-                            <small>NET PAYBLE AMT<small>
+                            <small>REMAINING AMT<small>
                           </th>
                         </tr>
                         <tr>
