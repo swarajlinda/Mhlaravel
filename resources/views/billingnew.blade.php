@@ -285,12 +285,12 @@
                         </tr>
                         <tr>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">
-                            <small>{{$data->rate}}<small>
+                            <small>{{$data->total_amt + $data->additional_amount}}<small>
                           </td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>{{$data->payment_method}}</small></td>
-                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><small>0</small></td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><small>{{$data->advance_paid}}</small></td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->room_type}}<small></td>
-                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->rate}}<small></td>
+                          <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->total_amt + $data->additional_amount - $data->advance_paid}}<small></td>
                         </tr>
                         <tr>
                           <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
@@ -329,7 +329,7 @@
                   <td>
 
                     <!-- Table Total -->
-                    <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                    <!-- <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
                       <tbody>
                         <tr>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right; ">
@@ -352,7 +352,7 @@
                             <strong>Grand Total (Incl.Tax)</strong>
                           </td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; ">
-                            <strong>₹ {{$data->payment_amt}}</strong>
+                            <strong>₹ {{$data->room_total_amt}}</strong>
                           </td>
                         </tr>
                         <tr>
@@ -362,7 +362,7 @@
                           </td>
                         </tr>
                       </tbody>
-                    </table>
+                    </table> -->
                     <!-- /Table Total -->
 
                   </td>
@@ -437,12 +437,11 @@
                                     <strong>Time Of Arrival :</strong> {{$data->check_in_date}} <br>
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <strong>Room No. :</strong>{{$data->room_no}}<br>
-                                    <strong>Days :</strong> # <br>
+                                    <strong>Days :</strong> {{$data->days}} <br>
                                     <strong>Rate :</strong> {{$data->rate}} <br>
-                                    <strong>Room Rent :</strong> {{$data->rate}} <br>
                                     <strong>Additional Charges :</strong> {{$data->additional_amount}} <br>
-                                    <!-- <strong>Other Charges :</strong> # <br> -->
-                                    <strong>Tax Amount :</strong> {{$data->payment_amt}} <br>
+                                    <strong>Advance Paid :</strong> {{$data->advance_paid}} <br>
+                                    <strong>Remaining Amount :</strong> {{$data->total_amt +$data->additional_amount - $data->advance_paid}} <br>
                                   </td>
                                 </tr>
                               </tbody>

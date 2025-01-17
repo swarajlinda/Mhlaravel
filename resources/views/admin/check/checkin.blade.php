@@ -162,30 +162,30 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
                                                 <label for="companyName">Company Name</label>
-                                                <input type="text" class="form-control" id="companyName" name="companyName" >
+                                                <input type="text" class="form-control" id="companyName" name="companyName">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="department">Department</label>
-                                                <input type="text" class="form-control" id="department" name="department" >
+                                                <input type="text" class="form-control" id="department" name="department">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="designation">Designation</label>
-                                                <input type="text" class="form-control" id="designation" name="designation" >
+                                                <input type="text" class="form-control" id="designation" name="designation">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group col-md-12">
                                                 <label for="website">Website</label>
-                                                <input type="text" class="form-control" id="website" name="website" >
+                                                <input type="text" class="form-control" id="website" name="website">
                                             </div>
                                         </div>
 
                                         <div class="d-flex w-100 align-items-center justify-content-between">
-                                            <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('1')">
+                                            <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('1')">
                                                 Previous
                                             </button>
-                                            <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
+                                            <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
                                                 Next
                                             </button>
                                         </div>
@@ -255,10 +255,10 @@
                                     </div>
 
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('2')">
+                                        <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('2')">
                                             Previous
                                         </button>
-                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('4')">
+                                        <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('4')">
                                             Next
                                         </button>
                                     </div>
@@ -301,14 +301,24 @@
                                                     <option value="Business">Business</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-md-3">
                                                 <label for="rate">Rate</label>
                                                 <input type="number" class="form-control" id="rate" name="rate" required="">
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="days">Days</label>
+                                                <input type="number" class="form-control" id="days" name="days" required="">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-md-3">
+                                                <label for="totalAmount">Total Amount</label>
+                                                <input type="number" class="form-control" id="totalAmount" name="totalAmount" readonly>
+                                            </div>
+
+                                            <div class="form-group col-md-3">
                                                 <label for="additionAmt">Additional Services Amount</label>
                                                 <input type="number" class="form-control" id="additionAmt" name="additionAmt">
                                             </div>
@@ -316,10 +326,10 @@
 
                                     </div>
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
+                                        <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('3')">
                                             Previous
                                         </button>
-                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('5')">
+                                        <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('5')">
                                             Next
                                         </button>
                                     </div>
@@ -361,7 +371,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <button class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('4')">
+                                        <button type="button" class="btn btn-dark btn-block mb-3 mt-5" onclick="stepper.navigate('4')">
                                             Previous
                                         </button>
                                         <button class="btn btn-dark btn-block mb-3 mt-5" type="submit">
@@ -392,5 +402,12 @@
 <script>
     const stepperElement = document.querySelector("#stepper");
     const stepper = new CDB.Stepper(stepperElement);
+
+    $("#days").change(function() {
+        var rate = $('#rate').val();
+        var days = $('#days').val();
+        var totalAmt = rate * days;
+        $("#totalAmount").val(totalAmt);
+    });
 </script>
 @endsection

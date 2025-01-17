@@ -17,7 +17,6 @@ class CheckController extends Controller
     // 
     public function postCheckIn(Request $req)
     {
-        // dd($req->all());
         $visitor = Visitor::create([
             "check_in_date" => $req->checkInDate,
             "check_in_time" => $req->checkInTime,
@@ -43,9 +42,11 @@ class CheckController extends Controller
             "room_no" => $req->roomNo,
             "room_type" => $req->roomType,
             "rate" => $req->rate,
+            "days" => $req->days,
             "additional_amount" => $req->additionAmt,
             "payment_method" => $req->paymentMethod,
-            "payment_amt" => $req->paymentAmt,
+            "advance_paid" => $req->paymentAmt,
+            "total_amt" => $req->totalAmount,
         ]);
 
         return view('billingnew', [
