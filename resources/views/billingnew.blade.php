@@ -438,7 +438,7 @@
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
-                                    <strong>Time Of Arrival :</strong> {{$data->check_in_date}} <br>
+                                    <strong>Date Of Arrival :</strong> {{$data->check_in_date}} <br>
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <strong>Room No. :</strong>{{$data->room_no}}<br>
                                     <strong>Days :</strong> {{$data->days}} <br>
