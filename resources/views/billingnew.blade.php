@@ -410,12 +410,20 @@
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
+                                    <strong>Company Name :</strong> {{$data->company_name}} <br>
+                                    <strong>GST No :</strong> <br>
                                     <strong>Visitors Name :</strong> {{$data->name_of_visitor}} <br>
+                                    <strong>Contact No:</strong> {{$data->contact1}} <br>
                                     <strong>Address: </strong> {{$data->address}} <br>
+                                    <strong>Room Type: </strong> {{$data->room_type}} <br>
+                                    <strong>Room No: </strong> {{$data->room_no}} <br>
+                                    <strong>CheckIn Date: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
+                                    <strong>CheckIn Time: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
+                                    <strong>CheckOut Date: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
+                                    <strong>CheckOut Time: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
                                     <strong>City, State , Postal Code :</strong>{{$data->city}}, {{$data->state}}, {{$data->postal_code}}<br>
                                     {{$data->country}}<br>
                                     <strong>Email :</strong>{{$data->email}} <br>
-                                    <strong>Phone:</strong> {{$data->contact1}} <br>
                                   </td>
                                 </tr>
                               </tbody>

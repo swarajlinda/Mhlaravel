@@ -90,6 +90,16 @@
                                                 <input type="time" class="form-control" id="checkInTime" name="checkInTime" placeholder="Select Time" required>
                                             </div>
                                         </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="checkOutDate">Check Out Date</label>
+                                                <input type="date" class="form-control" id="checkOutDate" name="checkOutDate" placeholder="Select Date">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="checkOutTime">Check Out Time</label>
+                                                <input type="time" class="form-control" id="checkOutTime" name="checkOutTime" placeholder="Select Time">
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                             <label for="nameOfVisitor">Name of Visitor</label>
                                             <input type="text" class="form-control" id="nameOfVisitor" name="nameOfVisitor" placeholder="Enter Name" required>

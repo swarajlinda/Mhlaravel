@@ -20,6 +20,8 @@ class CheckController extends Controller
         $visitor = Visitor::create([
             "check_in_date" => $req->checkInDate,
             "check_in_time" => $req->checkInTime,
+            "check_out_date" => $req->checkOutDate,
+            "check_out_time" => $req->checkOutTime,
             "name_of_visitor" => $req->nameOfVisitor,
             "contact1" => $req->contact1,
             "contact2" => $req->contact2,
