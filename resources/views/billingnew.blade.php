@@ -35,6 +35,18 @@
       // Restore the original content after printing
       document.body.innerHTML = originalContents;
     }
+
+
+    // Function to generate a random invoice number
+function generateInvoiceNo() {
+  const prefix = "INV"; // Prefix for the invoice
+  const randomNum = Math.floor(100000 + Math.random() * 900000); // Generate a 6-digit random number
+  return `${prefix}-${randomNum}`;
+}
+
+// Set the generated invoice number in the span
+document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
+
   </script>
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -197,7 +209,8 @@
                             <tr>
                               <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
                                 Hello, MH CLUBS & RESORTS.
-                                <br> Thank you for choosing MH CLUBS & RESORTS for your stay.
+                                <br>Manokamna nagar, tirka piska nagri, Ranchi Jharkhand 835303  <br>
+                                Mobile no : 8434608046, 7903476056
                               </td>
                             </tr>
                           </tbody>
@@ -211,10 +224,14 @@
                               <td height="5"></td>
                             </tr>
                             <tr>
-                              <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right;">
-                                Invoice
-                              </td>
-                            </tr>
+                            <tr>
+  <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right; padding-top: 20px;">
+    Invoice
+  </td>
+</tr>
+
+
+
                             <tr>
                             <tr class="hiddenMobile">
                               <td height="50"></td>
@@ -299,12 +316,12 @@
                         <tr>
                           <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
-                        <!-- <tr>
+                       <!-- <tr>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">Beats RemoteTalk Cable</td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MHDV2G/A</small></td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">1</td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right">$29.95</td>
-                        </tr> -->
+                        </tr>  -->
                         <tr>
                           <td height="1" colspan="5" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
@@ -313,7 +330,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td height="20"></td>
+                  <td height="10"></td>
                 </tr>
               </tbody>
             </table>
@@ -401,7 +418,7 @@
                             <table width="220" border="0" cellpadding="0" cellspacing="0" align="left" class="col" style="margin-bottom: 20px;">
                               <tbody>
                                 <tr>
-                                  <td style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top;">
+                                  <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top;">
                                     <strong>BILLING INFORMATION</strong>
                                   </td>
                                 </tr>
@@ -410,20 +427,17 @@
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
-                                    <strong>Company Name :</strong> {{$data->company_name}} <br>
-                                    <strong>GST No :</strong> <br>
-                                    <strong>Visitors Name :</strong> {{$data->name_of_visitor}} <br>
-                                    <strong>Contact No:</strong> {{$data->contact1}} <br>
-                                    <strong>Address: </strong> {{$data->address}} <br>
-                                    <strong>Room Type: </strong> {{$data->room_type}} <br>
-                                    <strong>Room No: </strong> {{$data->room_no}} <br>
-                                    <strong>CheckIn Date: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
-                                    <strong>CheckIn Time: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
-                                    <strong>CheckOut Date: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
-                                    <strong>CheckOut Time: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
-                                    <strong>City, State , Postal Code :</strong>{{$data->city}}, {{$data->state}}, {{$data->postal_code}}<br>
+                                    <strong>COMPANY NAME :</strong> {{$data->company_name}} <br>
+                                    <strong>GST NO. :</strong> <br>
+                                    <strong>VISITORS NAME :</strong> {{$data->name_of_visitor}} <br>
+                                    <strong>CONTACT NO. :</strong> {{$data->contact1}} <br>
+                                    <strong>ADDRESS : </strong> {{$data->address}} <br>
+                                    <strong>ROOM TYPE : </strong> {{$data->room_type}} <br>
+                                    <strong>ROOM NO : </strong> {{$data->room_no}} <br>
+                                    
+                                    <strong>CITY, STATE , POSTAL CODE : </strong>{{$data->city}}, {{$data->state}}, {{$data->postal_code}}<br>
                                     {{$data->country}}<br>
-                                    <strong>Email :</strong>{{$data->email}} <br>
+                                    <strong>EMAIL :</strong>{{$data->email}} <br>
                                   </td>
                                 </tr>
                               </tbody>
@@ -437,23 +451,27 @@
                                   <td height="20"></td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
-                                    <strong>PAYMENT METHOD</strong> {{$data->payment_method}}
-                                  </td>
+                                  <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                    <strong>OTHER INFORMATION </strong> 
                                 </tr>
                                 <tr>
                                   <td width="100%" height="10"></td>
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
-                                    <strong>Date Of Arrival :</strong> {{$data->check_in_date}} <br>
+                                  <strong>PAYMENT TYPE : </strong> {{$data->payment_method}} <br>
+                                    <strong>DATE OF ARRIVAL :</strong> {{$data->check_in_date}} <br>
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
-                                    <strong>Room No. :</strong>{{$data->room_no}}<br>
-                                    <strong>Days :</strong> {{$data->days}} <br>
-                                    <strong>Rate :</strong> {{$data->rate}} <br>
-                                    <strong>Additional Charges :</strong> {{$data->additional_amount}} <br>
-                                    <strong>Advance Paid :</strong> {{$data->advance_paid}} <br>
-                                    <strong>Remaining Amount :</strong> {{$data->total_amt +$data->additional_amount - $data->advance_paid}} <br>
+                                    <!-- <strong>Room No. :</strong>{{$data->room_no}}<br> -->
+                                    <strong>DAYS :</strong> {{$data->days}} <br>
+                                    <strong>RATE :</strong> {{$data->rate}} <br>
+                                    <strong>ADDITIONAL CHARGES :</strong> {{$data->additional_amount}} <br>
+                                    <strong>ADVANCE PAID :</strong> {{$data->advance_paid}} <br>
+                                    <strong>REMAINING AMOUNT :</strong> {{$data->total_amt +$data->additional_amount - $data->advance_paid}} <br>
+                                    <strong>CHECKIN DATE: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
+                                    <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
+                                    <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
+                                    <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
                                   </td>
                                 </tr>
                               </tbody>
@@ -545,11 +563,18 @@
               <td>
                 <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
                   <tbody>
-                    <tr>
-                      <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
-                        Have a nice day.
-                      </td>
-                    </tr>
+                  <tr>
+  <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: center;">
+    Have a nice day.
+  </td>
+</tr>
+<tr>
+  <td colspan="2" style="padding-top: 20px; text-align: left; font-family: 'Open Sans', sans-serif;">
+    <span style="display: inline-block; width: 50%; height : 10px; text-align: left; font-size: 12px; color: #5b5b5b; margin-top: 10px;"> <strong> Manager Signature </strong> </span>
+    <span style="display: inline-block; width: 100%; text-align: right; font-size: 12px; color: #5b5b5b;"> <strong> Customer Signature </strong> </span>
+  </td>
+</tr>
+
                     <tr>
                       <td style="text-align: right; padding-top: 20px;">
                         <!-- Save Button -->
