@@ -38,15 +38,14 @@
 
 
     // Function to generate a random invoice number
-function generateInvoiceNo() {
-  const prefix = "INV"; // Prefix for the invoice
-  const randomNum = Math.floor(100000 + Math.random() * 900000); // Generate a 6-digit random number
-  return `${prefix}-${randomNum}`;
-}
+    function generateInvoiceNo() {
+      const prefix = "INV"; // Prefix for the invoice
+      const randomNum = Math.floor(100000 + Math.random() * 900000); // Generate a 6-digit random number
+      return `${prefix}-${randomNum}`;
+    }
 
-// Set the generated invoice number in the span
-document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
-
+    // Set the generated invoice number in the span
+    document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
   </script>
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -209,7 +208,7 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                             <tr>
                               <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
                                 Hello, MH CLUBS & RESORTS.
-                                <br>Manokamna nagar, tirka piska nagri, Ranchi Jharkhand 835303  <br>
+                                <br>Manokamna nagar, tirka piska nagri, Ranchi Jharkhand 835303 <br>
                                 Mobile no : 8434608046, 7903476056
                               </td>
                             </tr>
@@ -225,10 +224,10 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                             </tr>
                             <tr>
                             <tr>
-  <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right; padding-top: 20px;">
-    Invoice
-  </td>
-</tr>
+                              <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right; padding-top: 20px;">
+                                Invoice
+                              </td>
+                            </tr>
 
 
 
@@ -299,7 +298,9 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                           </th>
                         </tr>
                         <tr>
-                          <td height="1" style="background: #bebebe;" colspan="5"></td>
+                          <td height="1" style="background: #bebebe;" colspan="5">
+                           
+                          </td>
                         </tr>
                         <tr>
                           <td height="10" colspan="4"></td>
@@ -316,7 +317,7 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                         <tr>
                           <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
-                       <!-- <tr>
+                        <!-- <tr>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">Beats RemoteTalk Cable</td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MHDV2G/A</small></td>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">1</td>
@@ -428,13 +429,13 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
                                     <strong>COMPANY NAME :</strong> {{$data->company_name}} <br>
-                                    <strong>GST NO. :</strong> <br>
+                                    <strong>GST NO. :</strong> {{$data->gst_no}} <br>
                                     <strong>VISITORS NAME :</strong> {{$data->name_of_visitor}} <br>
                                     <strong>CONTACT NO. :</strong> {{$data->contact1}} <br>
                                     <strong>ADDRESS : </strong> {{$data->address}} <br>
                                     <strong>ROOM TYPE : </strong> {{$data->room_type}} <br>
                                     <strong>ROOM NO : </strong> {{$data->room_no}} <br>
-                                    
+
                                     <strong>CITY, STATE , POSTAL CODE : </strong>{{$data->city}}, {{$data->state}}, {{$data->postal_code}}<br>
                                     {{$data->country}}<br>
                                     <strong>EMAIL :</strong>{{$data->email}} <br>
@@ -452,14 +453,14 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
-                                    <strong>OTHER INFORMATION </strong> 
+                                    <strong>OTHER INFORMATION </strong>
                                 </tr>
                                 <tr>
                                   <td width="100%" height="10"></td>
                                 </tr>
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
-                                  <strong>PAYMENT TYPE : </strong> {{$data->payment_method}} <br>
+                                    <strong>PAYMENT TYPE : </strong> {{$data->payment_method}} <br>
                                     <strong>DATE OF ARRIVAL :</strong> {{$data->check_in_date}} <br>
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <!-- <strong>Room No. :</strong>{{$data->room_no}}<br> -->
@@ -472,6 +473,7 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
                                     <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
                                     <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
                                     <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
+                                    <strong>Paid in Words: </strong>  <p id="amtInWords"></p> <br>
                                   </td>
                                 </tr>
                               </tbody>
@@ -563,17 +565,17 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
               <td>
                 <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
                   <tbody>
-                  <tr>
-  <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: center;">
-    Have a nice day.
-  </td>
-</tr>
-<tr>
-  <td colspan="2" style="padding-top: 20px; text-align: left; font-family: 'Open Sans', sans-serif;">
-    <span style="display: inline-block; width: 50%; height : 10px; text-align: left; font-size: 12px; color: #5b5b5b; margin-top: 10px;"> <strong> Manager Signature </strong> </span>
-    <span style="display: inline-block; width: 100%; text-align: right; font-size: 12px; color: #5b5b5b;"> <strong> Customer Signature </strong> </span>
-  </td>
-</tr>
+                    <tr>
+                      <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: center;">
+                        Have a nice day.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="padding-top: 20px; text-align: left; font-family: 'Open Sans', sans-serif;">
+                        <span style="display: inline-block; width: 50%; height : 10px; text-align: left; font-size: 12px; color: #5b5b5b; margin-top: 10px;"> <strong> Manager Signature </strong> </span>
+                        <span style="display: inline-block; width: 100%; text-align: right; font-size: 12px; color: #5b5b5b;"> <strong> Customer Signature </strong> </span>
+                      </td>
+                    </tr>
 
                     <tr>
                       <td style="text-align: right; padding-top: 20px;">
@@ -609,5 +611,59 @@ document.getElementById("autoInvoiceNo").textContent = generateInvoiceNo();
 
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    let paidAmt = {{ $data->advance_paid }};
+
+    let AmtInWords = numberToWords(paidAmt); 
+    console.log(AmtInWords)
+    $('#amtInWords').val(AmtInWords)
+    document.getElementById("amtInWords").innerHTML = AmtInWords;
+  });
+
+  // 
+
+  function numberToWords(num) {
+    if (num === 0) return "zero";
+
+    const belowTwenty = [
+      "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
+      "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
+      "Seventeen", "Eighteen", "Nineteen"
+    ];
+
+    const tens = [
+      "", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"
+    ];
+
+    const scales = ["", "Thousand", "Million", "Billion"];
+
+    function helper(n) {
+      if (n === 0) return "";
+      if (n < 20) return belowTwenty[n] + " ";
+      if (n < 100) return tens[Math.floor(n / 10)] + " " + helper(n % 10);
+      if (n < 1000) return belowTwenty[Math.floor(n / 100)] + " Hundred " + helper(n % 100);
+      return "";
+    }
+
+    let result = "";
+    let scaleIndex = 0;
+
+    while (num > 0) {
+      let chunk = num % 1000;
+      if (chunk > 0) {
+        result = helper(chunk) + scales[scaleIndex] + " " + result;
+      }
+      num = Math.floor(num / 1000);
+      scaleIndex++;
+    }
+
+    return result.trim();
+  }
+
+</script>
 
 </html>

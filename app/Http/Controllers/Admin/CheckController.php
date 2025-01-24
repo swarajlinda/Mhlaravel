@@ -29,6 +29,7 @@ class CheckController extends Controller
             "dob" => $req->dob,
             "gender" => $req->gender,
             "company_name" => $req->companyName,
+            "gst_no" => $req->gstNo,
             "department" => $req->department,
             "designation" => $req->designation,
             "website" => $req->website,

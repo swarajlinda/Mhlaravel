@@ -185,7 +185,11 @@
                                         </div>
 
                                         <div class="form-row">
-                                            <div class="form-group col-md-12">
+                                            <div class="form-group col-md-4">
+                                                <label for="gstNo">GST No.</label>
+                                                <input type="text" class="form-control" id="gstNo" name="gstNo">
+                                            </div>
+                                            <div class="form-group col-md-8">
                                                 <label for="website">Website</label>
                                                 <input type="text" class="form-control" id="website" name="website">
                                             </div>
