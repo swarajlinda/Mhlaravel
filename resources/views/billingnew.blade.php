@@ -473,7 +473,9 @@
                                     <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
                                     <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
                                     <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
-                                    <strong>Paid in Words: </strong>  <p id="amtInWords"></p> <br>
+                                    <strong>Paid in Words: </strong> 
+                                     <p id="amtInWords"></p>              <!-- here value is coming from javascript function just copy and paste it where u want to put -->
+                                    <br>
                                   </td>
                                 </tr>
                               </tbody>
