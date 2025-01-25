@@ -240,6 +240,14 @@
                             </tr>
                             <tr>
                               <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
+                                Invoice No:
+                                <?php
+                                echo "MH" . str_pad($data->id, 6, 0, STR_PAD_LEFT);
+                                ?>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
                                 <small>
                                   <?php
                                   $now = \Carbon\Carbon::now();
@@ -299,7 +307,7 @@
                         </tr>
                         <tr>
                           <td height="1" style="background: #bebebe;" colspan="5">
-                           
+
                           </td>
                         </tr>
                         <tr>
@@ -473,8 +481,8 @@
                                     <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
                                     <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
                                     <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
-                                    <strong>Paid in Words: </strong> 
-                                     <p id="amtInWords"></p>              <!-- here value is coming from javascript function just copy and paste it where u want to put -->
+                                    <strong>Paid in Words: </strong>
+                                    <p id="amtInWords"></p> <!-- here value is coming from javascript function just copy and paste it where u want to put -->
                                     <br>
                                   </td>
                                 </tr>
@@ -618,9 +626,13 @@
 
 <script>
   $(document).ready(function() {
-    let paidAmt = {{ $data->advance_paid }};
+    let paidAmt = {
+      {
+        $data - > advance_paid
+      }
+    };
 
-    let AmtInWords = numberToWords(paidAmt); 
+    let AmtInWords = numberToWords(paidAmt);
     console.log(AmtInWords)
     $('#amtInWords').val(AmtInWords)
     document.getElementById("amtInWords").innerHTML = AmtInWords;
@@ -665,7 +677,6 @@
 
     return result.trim();
   }
-
 </script>
 
 </html>
