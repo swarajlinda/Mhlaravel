@@ -626,11 +626,7 @@
 
 <script>
   $(document).ready(function() {
-    let paidAmt = {
-      {
-        $data - > advance_paid
-      }
-    };
+    let paidAmt = {{ $data->advance_paid }};
 
     let AmtInWords = numberToWords(paidAmt);
     console.log(AmtInWords)
