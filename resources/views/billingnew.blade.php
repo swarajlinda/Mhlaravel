@@ -469,7 +469,7 @@
                                 <tr>
                                   <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top;">
                                     <strong>PAYMENT TYPE : </strong> {{$data->payment_method}} <br>
-                                    <strong>DATE OF ARRIVAL :</strong> {{$data->check_in_date}} <br>
+                                    <!-- <strong>DATE OF ARRIVAL :</strong> {{$data->check_in_date}} <br> -->
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <!-- <strong>Room No. :</strong>{{$data->room_no}}<br> -->
                                     <strong>CHECKIN DATE: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
