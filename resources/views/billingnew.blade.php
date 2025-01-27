@@ -291,7 +291,7 @@
                         <tr>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px 0;" align="left">
                             Total Bill Amount
-                          </th>
+                          </th> 
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="left">
                             <small>PAYMENT TYPE<small>
                           </th>
@@ -323,7 +323,7 @@
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><small>{{$data->total_amt + $data->additional_amount - $data->advance_paid}}<small></td>
                         </tr>
                         <tr>
-                          <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                          <td height="1" colspan="6" style="border-bottom:1px solid #e4e4e4"></td>
                         </tr>
                         <!-- <tr>
                           <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">Beats RemoteTalk Cable</td>
@@ -472,16 +472,16 @@
                                     <strong>DATE OF ARRIVAL :</strong> {{$data->check_in_date}} <br>
                                     <!-- <strong>Date Of Departure : </strong> # <br> -->
                                     <!-- <strong>Room No. :</strong>{{$data->room_no}}<br> -->
+                                    <strong>CHECKIN DATE: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
+                                    <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
+                                    <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
+                                    <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
                                     <strong>DAYS :</strong> {{$data->days}} <br>
                                     <strong>RATE :</strong> {{$data->rate}} <br>
                                     <strong>ADDITIONAL CHARGES :</strong> {{$data->additional_amount}} <br>
                                     <strong>ADVANCE PAID :</strong> {{$data->advance_paid}} <br>
                                     <strong>REMAINING AMOUNT :</strong> {{$data->total_amt +$data->additional_amount - $data->advance_paid}} <br>
-                                    <strong>CHECKIN DATE: </strong> {{\Carbon\Carbon::parse($data->check_in_date)->format('d-m-Y')}} <br>
-                                    <strong>CHECKIN TIME: </strong> {{\Carbon\Carbon::parse($data->check_in_time)->format('h:i:s a')}} <br>
-                                    <strong>CHECKOUT DATE: </strong> {{\Carbon\Carbon::parse($data->check_out_date)->format('d-m-Y')}} <br>
-                                    <strong>CHECKOUT TIME: </strong> {{\Carbon\Carbon::parse($data->check_out_time)->format('h:i:s a')}} <br>
-                                    <strong>Paid in Words: </strong>
+                                     <strong>Paid in Words: </strong>
                                     <p id="amtInWords"></p> <!-- here value is coming from javascript function just copy and paste it where u want to put -->
                                     <br>
                                   </td>
