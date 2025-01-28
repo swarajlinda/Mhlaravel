@@ -36,7 +36,7 @@ class BookingController extends Controller
                 'room_type' => $req->roomType,
             ]);
 
-            // Mail::to($req->email)->send(new BookingConfirmation($booking));
+           Mail::to($req->email)->send(new BookingConfirmation($booking));
             return back()->with('success', 'Booking Successfully Completed');
         } catch (Exception $e) {
         }
