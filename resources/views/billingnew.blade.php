@@ -481,7 +481,7 @@
                                     <strong>ADDITIONAL CHARGES :</strong> {{$data->additional_amount}} <br>
                                    <?php 
                                     $remainingAmt = $data->total_amt +$data->additional_amount - $data->advance_paid;
-                                    if($remainingAmt <= 0){
+                                    if($data->payment_type == "FULL"){
                                       $label = "PAID AMOUNT";
                                     }
                                     else{

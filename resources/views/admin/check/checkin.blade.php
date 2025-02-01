@@ -366,7 +366,7 @@
                                     <br>
                                     <div class="p-10 d-flex flex-column justify-content-center w-100">
                                         <div class="form-row">
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-md-3">
                                                 <label for="paymentMethod">Payment Method</label>
                                                 <select class="form-control" name="paymentMethod" id="paymentMethod">
                                                     <option value="">Select Payment Method</option>
@@ -375,6 +375,13 @@
                                                     <option value="DD">DD</option>
                                                     <option value="UPI">UPI</option>
                                                     <option value="OTHERS">OTHERS</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="payemntType">Payment Type</label>
+                                                <select class="form-control" name="payemntType" id="payemntType">
+                                                    <option value="ADVANCE">ADVANCE</option>
+                                                    <option value="FULL">FULL</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-6">

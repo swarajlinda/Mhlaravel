@@ -50,6 +50,7 @@ class CheckController extends Controller
             "payment_method" => $req->paymentMethod,
             "advance_paid" => $req->paymentAmt,
             "total_amt" => $req->totalAmount,
+            "payment_type" => $req->payemntType,
         ]);
 
         return view('billingnew', [
