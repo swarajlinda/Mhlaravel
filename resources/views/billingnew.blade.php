@@ -479,9 +479,18 @@
                                     <strong>DAYS :</strong> {{$data->days}} <br>
                                     <strong>RATE :</strong> {{$data->rate}} <br>
                                     <strong>ADDITIONAL CHARGES :</strong> {{$data->additional_amount}} <br>
-                                    <strong>ADVANCE PAID :</strong> {{$data->advance_paid}} <br>
-                                    <strong>REMAINING AMOUNT :</strong> {{$data->total_amt +$data->additional_amount - $data->advance_paid}} <br>
-                                     <strong>Paid in Words: </strong>
+                                   <?php 
+                                    $remainingAmt = $data->total_amt +$data->additional_amount - $data->advance_paid;
+                                    if($remainingAmt <= 0){
+                                      $label = "PAID AMOUNT";
+                                    }
+                                    else{
+                                      $label = "ADVANCE PAID";
+                                    }
+                                    ?>
+                                    <strong>{{$label}} :</strong> {{$data->advance_paid}} <br>
+                                    <strong>REMAINING AMOUNT :</strong> {{$remainingAmt}} <br>
+                                     <strong>{{$label}} IN WORDS: </strong>
                                     <p id="amtInWords"></p> <!-- here value is coming from javascript function just copy and paste it where u want to put -->
                                     <br>
                                   </td>
