@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Mail\BookingConfirmation;
+use App\Mail\BookingRequest;
 use App\Models\Booking;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class BookingController extends Controller
@@ -21,6 +23,8 @@ class BookingController extends Controller
             "resdate" => "required|string",
             "quantity" => "required|integer"
         ]);
+
+        $myMail = env("MAIL_USERNAME");
         try {
             $dates = explode('/', $req->resdate);
             $checkIn = trim($dates[0]);
@@ -36,7 +40,12 @@ class BookingController extends Controller
                 'room_type' => $req->roomType,
             ]);
 
-           Mail::to($req->email)->send(new BookingConfirmation($booking));
+            try{
+                Mail::to($req->email)->send(new BookingConfirmation($booking));
+                Mail::to($myMail)->send(new BookingRequest($booking));
+            }catch(Exception $e){
+                Log::error($e->getMessage());
+            }
             return back()->with('success', 'Booking Successfully Completed');
         } catch (Exception $e) {
         }

@@ -313,6 +313,8 @@
                                                 <select class="form-control" id="roomType" name="roomType" required="">
                                                     <option value="Classic">Classic</option>
                                                     <option value="Business">Business</option>
+                                                    <option value="Suite">Suite</option>
+                                                    <option value="Delux">Delux</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-3">
