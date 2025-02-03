@@ -170,6 +170,15 @@
 </head>
 
 <body>
+<?php 
+  $remainingAmt = $data->total_amt +$data->additional_amount - $data->advance_paid;
+  if($data->payment_type == "FULL"){
+  $label = "PAID AMOUNT";
+  }
+  else{
+  $label = "ADVANCE PAID";
+}
+?>
   <!-- Header -->
   <div id="contentToPrint">
     <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
@@ -296,7 +305,7 @@
                             <small>PAYMENT TYPE<small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="center">
-                            <small>ADVANCE<small>
+                            <small>{{$label}}<small>
                           </th>
                           <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
                             <small>ROOM TYPE <small>
@@ -479,15 +488,7 @@
                                     <strong>DAYS :</strong> {{$data->days}} <br>
                                     <strong>RATE :</strong> {{$data->rate}} <br>
                                     <strong>ADDITIONAL CHARGES :</strong> {{$data->additional_amount}} <br>
-                                   <?php 
-                                    $remainingAmt = $data->total_amt +$data->additional_amount - $data->advance_paid;
-                                    if($data->payment_type == "FULL"){
-                                      $label = "PAID AMOUNT";
-                                    }
-                                    else{
-                                      $label = "ADVANCE PAID";
-                                    }
-                                    ?>
+                                   
                                     <strong>{{$label}} :</strong> {{$data->advance_paid}} <br>
                                     <strong>REMAINING AMOUNT :</strong> {{$remainingAmt}} <br>
                                      <strong>{{$label}} IN WORDS: </strong>
