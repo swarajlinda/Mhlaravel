@@ -592,7 +592,7 @@
                     </tr>
                     <tr>
                       <td colspan="2" style="padding-top: 20px; text-align: left; font-family: 'Open Sans', sans-serif;">
-                        <span style="display: inline-block; width: 50%; height : 10px; text-align: left; font-size: 12px; color: #5b5b5b; margin-top: 10px;"> <strong> Manager Signature </strong> </span>
+                        <span style="display: inline-block; width: 50%; height : 10px; text-align: left; font-size: 12px; color: #5b5b5b; margin-top: 10px;"> <strong> Authorized Signature </strong> </span>
                         <span style="display: inline-block; width: 100%; text-align: right; font-size: 12px; color: #5b5b5b;"> <strong> Customer Signature </strong> </span>
                       </td>
                     </tr>
