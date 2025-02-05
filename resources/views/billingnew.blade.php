@@ -3,25 +3,47 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <title> Order confirmation </title>
   <script>
-    // Function to save content as a file (e.g., a .txt file)
-    function saveContent() {
-      // Create a Blob with the content
-      const content = document.getElementById("contentToSave").innerText;
-      const blob = new Blob([content], {
-        type: "text/plain;charset=utf-8"
-      });
 
-      // Create a link element to trigger the download
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "content.txt"; // Default file name for the saved file
-      link.click(); // Trigger the download
-    }
+function saveContent() {
+            const { jsPDF } = window.jspdf;
+
+            // Hide buttons before capturing
+            document.getElementById('buttons').style.display = "none";
+
+            html2canvas(document.getElementById('contentToPrint'), { scale: 2 }).then(canvas => {
+                let imgData = canvas.toDataURL('image/png');
+                
+                // Define A4 size (210 x 297 mm)
+                let pdf = new jsPDF('p', 'mm', 'a4');
+
+                let pdfWidth = 210;  // A4 width in mm
+                let pdfHeight = 297; // A4 height in mm
+
+                let imgWidth = pdfWidth;
+                let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                if (imgHeight > pdfHeight) {
+                    imgHeight = pdfHeight;
+                }
+
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save("Bill.pdf");
+
+                // Show buttons again after saving
+                document.getElementById('buttons').style.display = "block";
+            });
+        }
 
     // Function to print a specific div element
     function printContent() {
+
+        // Hide buttons before capturing
+        document.getElementById('buttons').style.display = "none";
+        
       // Get the content of the div to print
       var printContents = document.getElementById("contentToPrint").innerHTML;
 
@@ -278,8 +300,7 @@
         </td>
       </tr>
     </table>
-    <!-- /Header -->
-    <!-- Order Details -->
+   
     <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
       <tbody>
         <tr>
@@ -356,8 +377,7 @@
         </tr>
       </tbody>
     </table>
-    <!-- /Order Details -->
-    <!-- Total -->
+ 
     <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
       <tbody>
         <tr>
@@ -412,8 +432,7 @@
         </tr>
       </tbody>
     </table>
-    <!-- /Total -->
-    <!-- Information -->
+  
     <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
       <tbody>
         <tr>
@@ -576,7 +595,7 @@
         </tr>
       </tbody>
     </table>
-    <!-- /Information -->
+ 
     <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
       <tr>
         <td>
@@ -598,7 +617,7 @@
                     </tr>
 
                     <tr>
-                      <td style="text-align: right; padding-top: 20px;">
+                      <td id="buttons" style="text-align: right; padding-top: 20px;">
                         <!-- Save Button -->
                         <a href="javascript:void(0);" onclick="saveContent()" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; font-size: 14px; font-family: 'Open Sans', sans-serif; border-radius: 5px; margin-right: 10px;">
                           Save
